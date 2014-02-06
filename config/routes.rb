@@ -1,4 +1,9 @@
 Whatever::Application.routes.draw do
+  get "static/landing_page"
+  get "static/help"
+  get "landing_page/help"
+  resources :tasks
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
